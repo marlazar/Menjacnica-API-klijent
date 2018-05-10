@@ -25,7 +25,7 @@ public class SOSacuvajKonverziju {
 		String date = format.format(now);
 
 		konverzija.setDatumVreme(date);
-		Gson gson = new GsonBuilder().setPrettyPrinting().create();
+		Gson gson = new GsonBuilder().setPrettyPrinting().serializeNulls().create();
 
 		JsonArray history = null;
 

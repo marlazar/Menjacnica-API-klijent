@@ -35,8 +35,11 @@ public class Konverzija {
 		return kurs;
 	}
 
-	public void setKurs(Double kurs) {
-		this.kurs = kurs;
+	public void setKurs(double kurs) {
+		if (kurs == 0)
+			this.kurs = null;
+		else
+			this.kurs = kurs;
 	}
 
 }

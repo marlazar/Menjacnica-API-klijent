@@ -1,7 +1,7 @@
 package sistemski_kontroler;
 
 import java.io.IOException;
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 import domenske_klase.Drzava;
 import sistemske_operacije.SOSacuvajKonverziju;
@@ -16,11 +16,11 @@ public class Menjacnica {
 
 	}
 
-	public LinkedList<Drzava> vratiDrzave() {
+	public ArrayList<Drzava> vratiDrzave() {
 		return SOVratiDrzave.izvrsi();
 	}
 
-	public double vratiKurs(String from, String to) {
+	public double vratiKurs(String from, String to) throws Exception {
 		return SOVratiKurs.izvrsi(from, to);
 	}
 
